@@ -49,7 +49,7 @@ const CartContainer = ()=>{
 <p>Escoge los productos que necesitas y confirma la compra en el carrito.</p>
 </div>
 
-<img style={{width:100, height:100,}}  src={arrow}></img>
+<img className='flecha' style={{width:100, height:100,}}  src={arrow}></img>
 
 <div className='item-comotrabajamos'>
 <img src={chat}></img>
@@ -57,7 +57,7 @@ const CartContainer = ()=>{
 <p>Nos pondremos en contacto contigo.</p>
 </div>
 
-<img style={{width:100, height:100,}}  src={arrow}></img>
+<img className='flecha' style={{width:100, height:100,}}  src={arrow}></img>
 
 <div className='item-comotrabajamos'>
 <img src={envio}></img>
@@ -65,7 +65,7 @@ const CartContainer = ()=>{
 <p>Despues de tener todo confirmado enviamos tus productos.</p>
 </div>
 
-<img style={{width:100, height:100,}}  src={arrow}></img>
+<img className='flecha' style={{width:100, height:100,}}  src={arrow}></img>
 
 <div className='item-comotrabajamos'>
 <img src={delivery}></img>

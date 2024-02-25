@@ -18,3 +18,32 @@
 .cart-comotrabajamos p{width: 200px; height: auto;}
 
 .item-comotrabajamos{background-color: azure; width: 220px; border-radius: 50px;}
+
+@media screen and (max-width: 1080px) {
+
+    .cart-containerinicio{height: 100%; margin: 0%;}
+
+    .portada-img{width: 100%; height: auto;}
+    
+    .cart-categorias{  margin: 30px;  display: flex; flex-direction: column; justify-content: space-evenly; align-items: center;  background-color: blanchedalmond;}
+    
+    .item-categoria{height: 400px;}
+    
+    .item-categoria img{width: 290px; height: 190px; margin: 50px; }
+    
+    .cart-categorias p{position: relative; left: 10px;bottom: 250px; color: white; font-size: 25px; background-color: rgb(170, 39, 39); height: 40px; width: 300px;}
+    
+    
+    .cart-comotrabajamos{display: flex; flex-direction: column; justify-content: space-evenly; align-items: center; margin: 50px; }
+    
+    .cart-comotrabajamos img{width: 150px; height: auto;}
+
+    .cart-comotrabajamos .flecha{  transform: rotate(90deg);}
+    
+    .cart-comotrabajamos p{width: 200px; height: auto;}
+    
+    .item-comotrabajamos{background-color: azure; width: 220px; border-radius: 50px;}
+    
+
+
+   }
