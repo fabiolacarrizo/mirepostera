@@ -1,5 +1,4 @@
 import './CartContainer.css'
-import portadawe from '../../assets/img/portadawe.png'
 import gelatina from '../../assets/img/gelatina.png'
 import vainillahd2 from '../../assets/img/vainillahd2.jpg'
 import gliter from '../../assets/img/gliter.png'
@@ -8,7 +7,8 @@ import delivery from '../../assets/img/delivery.png'
 import chat from '../../assets/img/chat.png'
 import buy from '../../assets/img/buy.png'
 import arrow from '../../assets/img/arrow.png'
-import portada from '../../assets/img/portada.png'
+import portadatex from '../../assets/img/portadatex.png'
+import portadacake1 from '../../assets/img/portadacake1.png'
 
 const CartContainer = ()=>{
     return(
@@ -16,9 +16,11 @@ const CartContainer = ()=>{
         <div >
  <div className="cart-containerinicio">
 
-        <img className='portada-img' src={portada}></img>
+<div className='cart-portada'>
+        <img className='portada-img' src={portadatex}></img>
+        
 
-
+</div>
 
 <div className='cart-categorias'>
 
@@ -53,8 +55,8 @@ const CartContainer = ()=>{
 
 <div className='item-comotrabajamos'>
 <img src={chat}></img>
-<h4>2. Respondemos</h4>
-<p>Nos pondremos en contacto contigo.</p>
+<h4>2. Realiza tu Pago</h4>
+<p>Nos comunicaremos contigo para coordinar el pago.</p>
 </div>
 
 <img className='flecha' style={{width:100, height:100,}}  src={arrow}></img>

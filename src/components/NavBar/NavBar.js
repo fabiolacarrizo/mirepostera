@@ -16,7 +16,7 @@ const NavBar= ()=>{
     <ul>
         <li>Inicio</li>
         <li>Productos</li>
-        <li>Cursos</li>
+        <li>Recetas</li>
         <li>Preguntas Frecuentes</li>
         <li>Contacto</li>
     </ul>

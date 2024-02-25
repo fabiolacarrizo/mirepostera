@@ -1,6 +1,8 @@
 .cart-containerinicio{height: 100%; margin: 0%;}
 
-.portada-img{width: 100%; height: auto;}
+.cart-portada{width: 100%; height: 400px; display: flex; align-items: start;background-image: url("../../assets//img/portada-pasteleria.jpg"); background-size: cover;  }
+
+.portada-img{ height: auto; width: 80%;   }
 
 .cart-categorias{  margin: 50px;  display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;  background-color: blanchedalmond;}
 
@@ -20,11 +22,15 @@
 
 .item-comotrabajamos{background-color: azure; width: 220px; border-radius: 50px;}
 
+
+
 @media screen and (max-width: 1080px) {
 
     .cart-containerinicio{height: 100%; margin: 0%;}
 
-    .portada-img{width: 100%; height: auto;}
+    .cart-portada{width: 100%; height: auto; display: flex; align-items: start;background-image: url("../../assets//img/portada-pasteleria.jpg"); background-size: cover;  }
+
+    .portada-img{width: 80%; height: auto;}
     
     .cart-categorias{  margin: 30px;  display: flex; flex-direction: column; justify-content: space-evenly; align-items: center;  background-color: blanchedalmond;}
     
