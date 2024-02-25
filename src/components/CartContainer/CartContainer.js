@@ -8,6 +8,7 @@ import delivery from '../../assets/img/delivery.png'
 import chat from '../../assets/img/chat.png'
 import buy from '../../assets/img/buy.png'
 import arrow from '../../assets/img/arrow.png'
+import portada from '../../assets/img/portada.png'
 
 const CartContainer = ()=>{
     return(
@@ -15,9 +16,8 @@ const CartContainer = ()=>{
         <div >
  <div className="cart-containerinicio">
 
-        <img className='portada-img' src={portadawe}></img>
+        <img className='portada-img' src={portada}></img>
 
-      
 
 
 <div className='cart-categorias'>
