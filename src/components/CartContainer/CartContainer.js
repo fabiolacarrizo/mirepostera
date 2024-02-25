@@ -9,6 +9,7 @@ import buy from '../../assets/img/buy.png'
 import arrow from '../../assets/img/arrow.png'
 import portadatex from '../../assets/img/portadatex.png'
 import portadacake1 from '../../assets/img/portadacake1.png'
+import CartPrincipales from '../CartPrincipales/CartPrincipales'
 
 const CartContainer = ()=>{
     return(
@@ -16,11 +17,10 @@ const CartContainer = ()=>{
         <div >
  <div className="cart-containerinicio">
 
-<div className='cart-portada'>
-        <img className='portada-img' src={portadatex}></img>
-        
-
+<div className='cart-portada'>  
 </div>
+
+<CartPrincipales></CartPrincipales>
 
 <div className='cart-categorias'>
 
