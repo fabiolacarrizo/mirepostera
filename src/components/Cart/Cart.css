@@ -1,0 +1,17 @@
+.cart-Container{ height: 100%; align-items: center; justify-content: center; margin: 20px; margin-bottom: 10%; padding-bottom: 100px;}
+
+.card_productosCarrito{display: flex; flex-direction: column; justify-content: center; align-items: center;}
+
+.totalCard{font-size: 20px; }
+
+.cartButtons{margin-bottom: 20px;}
+
+.itemsInCart{display: flex; flex-direction: column;}
+
+.botonSeguirComprando{text-decoration: none; color: #001253; }
+
+.botonSeguirComprando img{width: 50px; height: 50px; margin-right: 20px;}
+
+.buttons-itemcart{display: flex; flex-direction: row; justify-content: center; align-items: center; margin-bottom: 1000px;}
+
+.buttons-itemcart button{margin: 10px;}

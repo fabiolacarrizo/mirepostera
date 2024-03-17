@@ -1,0 +1,27 @@
+.card_productos{ display: flex; flex-direction: column; margin: 20px; box-shadow: 1px 1px 5px 0px black; width: 280px; height: 500px; margin-bottom: 50px; position: relative; padding: 5px; }
+
+
+.card_productosImg{width: 100%; height: 320px; object-fit: cover; margin-bottom: 10px; bottom: 0%;display: flex; justify-content: end; }
+
+
+.boton-detalle{background-color: #100720;  color: white; text-decoration: none; padding: 10px;}
+
+.boton-detalle:hover{color: white; background-color: palevioletred;}
+
+
+.oferta-cart{color: white; background-color: palevioletred; width: 100px; height: 35px; border-radius: 5px; position: absolute; top: 1rem; font-size: 22px;}
+
+.precio-tachado{text-decoration: line-through;}
+
+@media screen and (max-width: 767px), (max-width: 1080px) {
+
+    .card_productos{margin: 10px; box-shadow: 1px 1px 5px 0px black; width: 150px; height: 280px; margin-bottom: 20px; font-size: 12px;}
+
+    .card_productos h5{font-size: 15px;}
+    .card_productos h3{font-size: 17px;}
+
+    .oferta-cart{color: white; background-color: palevioletred; width: 80px; height: 30px; border-radius: 5px; position: absolute; top: 1rem; font-size: 20px;}
+
+    .card_productosImg{width: 100%; height: 130px; margin: 5px; object-fit: cover;}
+    
+   }

@@ -7,10 +7,12 @@
      padding: 25px;
 }
 
-.menunav{ margin-bottom: 100px;}
+.menunav{ margin-bottom: 100px; text-decoration: none;}
+
+.button2{text-decoration: none; color:white; margin: 5px;}
 
 .cart-navbar img{width: 250px; height: auto; margin-top: 100px;}
 
-.cart-navbar ul{list-style: none; display: flex; flex-direction: row; }
+.cart-navbar ul {list-style: none; display: flex; flex-direction: row; }
 
-.cart-navbar li{margin-right: 10px;}
+.cart-navbar li{margin-right: 10px; list-style: none;}

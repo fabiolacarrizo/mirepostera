@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+
+.card-detalleItem{display: flex; align-items: center; justify-content: center; margin-bottom: 100px; height: 100%; } 
+
+.card-detalleItem img{margin-right: 150px; width: 100%; height: auto; }
+
+
+.botonvolver{background-color: #5F6F94; margin: 10px; color: #97D2EC; box-shadow: 5px 2px 4px 2px #5F6F94; text-decoration: none;
+    width: 80px; height: 30px;}
+    
+    .botonvolver:hover{color: white;}
+    
+.card-detalleImgVolver{display: flex; flex-direction: column; width: 40%; margin: 20px; overflow: hidden; }
+
+button{border: none;}
+
+.cart-botonesDetail{display: flex; flex-direction: row; text-decoration: none;}
+
+.cart-botonesDetail button{margin: 10px; text-decoration: none;}
+
+.out-underline{text-decoration: none;}
+
+.cart-descriptionProduct{text-align: justify;}
+
+a{text-decoration: none;}
+
+p{text-decoration: none;}
+
+.whatsapp-consulta-bulto{width: 30px; height: 30px; position: absolute; }
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+ }
+ 
+ button.learn-more {
+  width: 15rem;
+  height: auto;
+ }
+ 
+ button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #5F9DF7;
+  border-radius: 1.625rem;
+ }
+ 
+ button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+ }
+ 
+ button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+ }
+ 
+ button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+ }
+ 
+ button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #282936;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+ }
+ 
+ button:hover .circle {
+  width: 100%;
+ }
+ 
+ button:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+ }
+ 
+ button:hover .button-text {
+  color: #fff;
+ }
+
+@media screen and (max-width: 1080px) {
+    
+  .card-detalleItem{padding: 5px; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+  
+  .card-detalleItem img{margin-right: 150px;  width: 100%; height: auto;}
+      
+  .card-detalleImgVolver{margin: 10px;  margin-left: 5px; width: 100%;}
+
+  .card-detalleImgVolver img{width: 100%; height: auto; margin: 10px;}
+  
+  button{border: none;}
+  
+  .cart-botonesDetail{display: flex; flex-direction: row; text-decoration: none;}
+  
+  .cart-botonesDetail button{margin: 10px; text-decoration: none;}
+  
+  .out-underline{text-decoration: none;}
+  
+  .cart-descriptionProduct{text-align: justify; font-size: 15px;}
+  
+  a{text-decoration: none;}
+  
+  .boton-consulta{transition: 0.5s;background-color: #100720; border-radius: 10px; width: 160px; height: 70px; display: flex; flex-direction: row; padding: 5px;}
+  
+  .boton-consulta p{color: white; font-size: 18px; margin: 3px; transition: 0.5s;}
+  
+  .boton-consulta img{display: none; margin-right: 0%; transition: 2s;}
+  
+  .boton-consulta:hover img{transition-duration: 2s; display: flex; width: 50px; height: 50px;  transition: 3s; margin-left: 30px;}
+  
+
+
+
+}

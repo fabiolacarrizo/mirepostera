@@ -1,0 +1,12 @@
+.form-login{ border-radius: 0px 30px 0px 30px; width: 350px; padding: 20px; margin-bottom: 100px; height: 450px; box-shadow: 0px 0px 8px 0px white; background: rgba(246, 239, 244, 0.75); margin-top: 80px;}
+
+.buttons-login{display: flex; flex-direction: row; justify-content: center;}
+
+.form-login button{margin: 10px;}
+
+.form-login input{ padding-left: 15px; width: 80%; border: 0;  border-bottom: 1px solid #000; background: inherit;
+    background-color:transparent;  }
+
+.inputusuario{display: none;}
+
+.login-img{width: 150px; height: 150px;   background-color: transparent; border-radius: 80px;}

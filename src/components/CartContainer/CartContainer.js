@@ -1,7 +1,4 @@
 import './CartContainer.css'
-import gelatina from '../../assets/img/gelatina.png'
-import vainillahd2 from '../../assets/img/vainillahd2.jpg'
-import gliter from '../../assets/img/gliter.png'
 import envio from '../../assets/img/envio.png'
 import delivery from '../../assets/img/delivery.png'
 import chat from '../../assets/img/chat.png'
@@ -17,29 +14,9 @@ const CartContainer = ()=>{
         <div >
  <div className="cart-containerinicio">
 
-<div className='cart-portada'>  
-</div>
+<div className='cart-portada'>  </div>
 
 <CartPrincipales></CartPrincipales>
-
-<div className='cart-categorias'>
-
-   <div className='item-categoria'> <img src={vainillahd2}></img>
-     <p>Esencias y Sabores</p>
-   </div> 
-
-   <div className='item-categoria'>
-     <img src={gliter}></img>
-     <p>Reposteria y Decoracion</p>
-   </div>
-
-   <div className='item-categoria'>
-    <img src={gelatina}></img>
-    <p>Materias Primas</p>
-   </div>
-
-</div>
-
 
 <h3>¿Como Trabajamos?</h3>
 

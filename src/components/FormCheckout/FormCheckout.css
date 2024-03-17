@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+.form-container{ height: 100%; margin-top: 20px; margin-bottom: 70px; padding-bottom: 300px;}
+.formCheckout{display: flex; flex-direction: column; justify-content:center; justify-items: center; align-items: center;}
+
+.formCheckout p{margin:20px; }
+
+.datosEnvio{ justify-content:center; text-align:justify; align-items: center; align-self: center;  width: 800px; padding: 20px; border-radius: 20px; box-shadow: 0px 0px 6px 0px black; margin: 10px; margin-bottom: 20px; background: rgba(246, 239, 244, 0.75); }
+
+label{margin-right: 10px; margin-left: 10px;}
+
+.cart-textarea{width: 500px;}
+
+@media screen and (max-width: 1080px) {
+
+  .form-container{ height: 100%; margin-top: 20px; margin-bottom: 70px; padding-bottom: 300px;}
+  .formCheckout{display: flex; flex-direction: column; justify-content:center; justify-items: center; align-items: center;}
+  
+  .formCheckout p{margin:10px; }
+  
+  .datosEnvio{ justify-content:center; text-align:justify; align-items: center; align-self: center;  width: 90%; padding: 10px; border-radius: 10px; box-shadow: 0px 0px 6px 0px black; margin: 10px; margin-bottom: 20px; background: rgba(246, 239, 244, 0.75); }
+  
+  label{margin-right: 3px; margin-left: 3px;}
+
+  .datosEnvio p{flex-wrap: wrap; display: flex; flex-direction: column;}
+
+  .cart-textarea{width: 300px; height: 150px;} 
+
+ }
