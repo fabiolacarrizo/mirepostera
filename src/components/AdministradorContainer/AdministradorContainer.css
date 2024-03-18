@@ -1,0 +1,7 @@
+.container-admin{display: flex; flex-direction: row; }
+
+.container-panel{height: 100%; padding-bottom: 500px;}
+
+.admin-button-cart{margin-bottom: 500px;}
+
+.admin-button{margin: 10px; border: solid rgb(50, 41, 86) 6px; border-style:double; width: 200px; height: 50px;}

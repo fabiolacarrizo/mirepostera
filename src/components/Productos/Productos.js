@@ -2,8 +2,9 @@ import './Productos.css'
 import { getDocs, collection, query, where, orderBy, limit} from 'firebase/firestore'
 import { db } from '../../service/firebase'
 import ItemList from '../ItemList/ItemList'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
+import logo2 from '../../assets/img/logo2.png'
 
 
 const Productos =(props)=>{
@@ -35,7 +36,7 @@ const Productos =(props)=>{
       if(loading) {
         return(
           <div style={{position:"relative", marginBottom:200}}>
-          <div className="loding-logo"> <img style={{ width:100, height:100, position:"absolute"}} ></img> </div>
+          <div className="loding-logo"> <img style={{ width:140, height:100, position:"absolute"}} src={logo2} ></img> </div>
           <div  style={{marginTop:200,  width:200, height:200, color:'pink'}} className='spinner-border' role="status">  </div>
         </div>
         )}
@@ -43,7 +44,14 @@ const Productos =(props)=>{
     
     return(
         <div>
-<h1>productos</h1>
+
+<div className='cart-categorias'>
+<Link to={'/category/esenciasysabores'}>Esencias y Sabores</Link>
+<Link to={'/category/reposteriaydecoracion'}>Reposteria y Decoracion</Link>
+<Link to={'/category/materiasprimas'}>Materias Primas</Link>
+<Link to={'/productos'}>Todos</Link>
+</div>
+
 <div className="table-responsive "> <ItemList  products={products} /></div>
         </div>
     )

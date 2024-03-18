@@ -10,9 +10,10 @@ const NavBar= ()=>{
 
     <div className="cart-navbar">
 
- <div className="logo">
+<Link to={'/'}><div className="logo">
 <img src={logomr}></img> 
 </div>
+</Link> 
 
 <div className="menunav">
   
@@ -21,6 +22,7 @@ const NavBar= ()=>{
          <Link className='button2'  to={'/recetas'}>Recetas</Link>
         <Link className='button2'  to={'/preguntasfrecuentes'}>Preguntas Frecuentes</Link>
         <Link className='button2'  to={'/contacto'}> Contacto</Link>
+        <Link className='button2'  to={'/login'}> Log</Link>
   
 </div>
 <CartWidget></CartWidget>

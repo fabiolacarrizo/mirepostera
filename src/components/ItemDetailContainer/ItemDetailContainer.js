@@ -4,6 +4,7 @@ import {useState, useEffect} from "react"
 import { useParams } from 'react-router-dom'
 import { getDoc, doc } from "firebase/firestore"
 import { db } from "../../service/firebase"
+import logo2 from '../../assets/img/logo2.png'
 
 
 const ItemDetailContainer = ()=>{
@@ -33,7 +34,7 @@ getDoc(docRef).then(response =>{
 if(loading) {
   return(
     <div style={{position:"relative",  marginBottom:200}}>
-    <div className="loding-logo"> <img style={{ width:100, height:100, position:"absolute"}} ></img> </div>
+    <div className="loding-logo"> <img style={{ width:150, height:100, position:"absolute"}} src={logo2} ></img> </div>
     <div  style={{marginTop:200,  width:200, height:200, color:'pink'}} className='spinner-border' role="status">  </div>
   </div>
   )}

@@ -12,6 +12,9 @@ import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailCont
 import CartProvider from './context/CartContext';
 import Cart from './components/Cart/Cart'
 import Checkout from './components/Checkout/Checkout'
+import ListProductEdit from './components/ListProductEdit/ListProductEdit';
+import Login from './components/Login/Login';
+import Edit from './components/Edit/Edit';
 
 function App() {
   return (
@@ -28,6 +31,10 @@ function App() {
   <Route path= '/detail/:productId' element={<ItemDetailContainer/>}/> 
   <Route path='/cart' element={<Cart/>} > </Route>
   <Route path='/checkout' element={<Checkout/>}></Route>
+  <Route path='/login' element={<Login/>}></Route>
+  <Route path='/edit/:id' element={ <Edit /> } />
+  <Route path='/listadeproductosadmi' element={<ListProductEdit></ListProductEdit>}></Route>
+  <Route path='/category/:categoryId' element={<Productos/>}>  </Route>
  </Routes>
  <WidgetWhatsapp></WidgetWhatsapp>
   <Footer></Footer>

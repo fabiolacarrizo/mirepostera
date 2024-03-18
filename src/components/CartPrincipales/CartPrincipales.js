@@ -2,12 +2,14 @@ import './CartPrincipales.css'
 import gelatina from '../../assets/img/gelatina.png'
 import vainillahd2 from '../../assets/img/vainillahd2.jpg'
 import gliter from '../../assets/img/gliter.png'
+import { Link } from 'react-router-dom'
 
 
 const CartPrincipales =()=>{
 return(
     <div className='carts-container'>
 
+<Link to={'/category/esenciasysabores'}>
 <div className='cart-p'>
     <div className='face front'>
 <img src={vainillahd2}></img>
@@ -25,7 +27,9 @@ return(
    </p>
      </div>
 </div>
+</Link>
 
+<Link to={'/category/reposteriaydecoracion'}>
 <div className='cart-p'>
     <div className='face front'>
 <img src={gliter}></img>
@@ -43,8 +47,9 @@ return(
    </p>
      </div>
 </div>
+</Link>
 
-
+<Link to={'/category/materiasprimas'}>
 <div className='cart-p'>
     <div className='face front'>
 <img src={gelatina}></img>
@@ -64,7 +69,7 @@ return(
    </p>
      </div>
 </div>
-
+</Link>
 
     </div>
 )

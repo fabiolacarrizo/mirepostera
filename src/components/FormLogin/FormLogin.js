@@ -1,7 +1,7 @@
 import { async } from '@firebase/util';
 import { useState } from 'react'
 import './FormLogin.css'
-import login from '../../Assets/Img/login.png'
+import login from '../../assets/img/login.png'
 import { getFirestore, doc, setDoc,  } from 'firebase/firestore';
 import { app } from '../../service/firebase'
 import {getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword} from 'firebase/auth'

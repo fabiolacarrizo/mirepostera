@@ -22,8 +22,9 @@ const Item = ({id, name, code, price , img, category,visible, priceCaja}) =>{
         <div className='card_productos'>
             <img className='card_productosImg' src={img} alt={name}></img>
        
-            <p> {priceCaja > 0 ? 'Caja: USD$'+ priceCaja : "" }</p> 
-            <p>{price > 0 ? 'Bulto: USD$' + price : ""}</p>
+         <h4>{name}</h4>
+            <p> {priceCaja > 0 ? 'USD$'+ priceCaja : "" }</p> 
+            <p>{price > 0 ? 'Mayorista: USD$' + price : ""}</p>
         
             <Link className='boton-detalle'  to={`/detail/${id}`}>Ver detalle</Link>
         </div>
