@@ -1,6 +1,6 @@
 
 
-.cart-footer{ height: 180px; background-color: black;  padding: 30px; display: flex; flex-direction: column; justify-content: center; align-items: center;  }
+.cart-footer{ height: 240px; background-color: black;  padding: 30px; display: flex; flex-direction: column; justify-content: center; align-items: center;  }
 
 .cart-footer li{list-style: none; color: white;}
 

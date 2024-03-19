@@ -1,4 +1,4 @@
-.container-itemaddproduct{display: flex; flex-direction: column;}
+.container-itemaddproduct{display: flex; flex-direction: row;}
 
 .cart-agregarproductos{width: 800px; height: 120%; border: solid 1px black;  margin: 100px; margin-top:40px; padding: 40px; box-shadow: 0px 0px 3px 0px; background-color: white;}
 
