@@ -81,7 +81,7 @@ const clickCompra = ()=>{
 }
 */
 
-const wPedido= `https://api.whatsapp.com/send?phone=5491126146888&text=Hola,%20Quisiera%20realizar%20un%20pedido.%0ACliente:%20${order.buyer.name}%20TLF:${order.buyer.tlf}%20Email:${order.buyer.email}%0ADatos%20Envio:%0ADireccion:%20${order.buyer.direction}%0AAltura:%20${order.buyer.directionNumber}%0ALocalidad:%20${order.buyer.location}%0AProvincia:%20${order.buyer.province}%0ACP:%20${order.buyer.cp}%0ATransporte:%20${order.buyer.comment}
+const wPedido= `https://api.whatsapp.com/send?phone=5491126222492&text=Hola,%20Quisiera%20realizar%20un%20pedido.%0ACliente:%20${order.buyer.name}%20TLF:${order.buyer.tlf}%20Email:${order.buyer.email}%0ADatos%20Envio:%0ADireccion:%20${order.buyer.direction}%0AAltura:%20${order.buyer.directionNumber}%0ALocalidad:%20${order.buyer.location}%0AProvincia:%20${order.buyer.province}%0ACP:%20${order.buyer.cp}%0ATransporte:%20${order.buyer.comment}
 %0AProductos:%0A${order.items.map((items)=>{return `%20-${items.title}+%20DQ${items.code}+%20${items.precioVenta === items.price ? 'Bultos' :'Cajas'}%20${items.quantity}+x%20Precio%20USD$${items.precioVenta === items.price ? items.price : items.precioVenta}%20=%20SubTotal%20USD$${items.precioVenta === items.price ? items.quantity * items.price :  items.quantity * items.precioVenta  }%0A ` })}
 %0ATotal%20Productos:%20${order.totalproducts}
 %0ATotal:USD$${order.total}`
