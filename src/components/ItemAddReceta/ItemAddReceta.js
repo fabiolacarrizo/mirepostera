@@ -15,7 +15,6 @@ import {
 const ItemAddReceta = () => {
   const [ img, setImg ] = useState('')
   const [ name, setName ] = useState('')
-  const [ description, setDescription ] = useState('')
   const navigate = useNavigate()
   const [imageUpload, setImageUpload] = useState(null);
 
@@ -23,7 +22,7 @@ const ItemAddReceta = () => {
 
   const store = async (e) => { 
     e.preventDefault()
-     if ( !description  || !name || !img  )
+     if (  !name || !img  )
     {
         return(
             Swal.fire('Completa los datos porfavor') 
@@ -32,7 +31,7 @@ const ItemAddReceta = () => {
         Swal.fire('Receta Agregada') 
     } 
 
-    await addDoc( productsCollection, { description: description, name: name, img: img } )
+    await addDoc( productsCollection, {  name: name, img: img } )
     //console.log(e.target[0].value)
   }
 
@@ -77,17 +76,6 @@ const ItemAddReceta = () => {
                         />                 
                     </div>  
                     
-
-                   
-                     <div className='mb-3'>
-                        <label className='form-label'>Descripcion</label>
-                        <input
-                            value={description}
-                            onChange={ (e) => setDescription(e.target.value)} 
-                            type="text"
-                            className='form-control'
-                        />
-                    </div>  
 
 
                     <button type='submit' className='btn btn-primary'>Subir</button>

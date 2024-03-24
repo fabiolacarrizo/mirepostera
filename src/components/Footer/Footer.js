@@ -16,7 +16,6 @@ const Footer =()=>{
 <ul className='iconos-redes'>
     <li> <img src={iconocorreo}></img></li>
     <li><img src={iconoinstagram}></img></li>
-    <li><img src={whatsapp}></img></li>
 </ul>
         </div>
     )
