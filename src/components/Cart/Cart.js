@@ -13,7 +13,7 @@ const Cart = () => {
 		return (
 		 <div className="cart-Container">
 				<h4>No hay elementos en el carrito</h4>
-				<Link className="botonSeguirComprando" to="/"> Hacer compras</Link>
+				<Link className="botonSeguirComprando" to="/productos"> Hacer compras</Link>
 		</div>
 		);
 	}
@@ -27,7 +27,7 @@ const Cart = () => {
            </div>
 			<p className="totalCard">Total: USD${totalPrice()}</p>
 	     
-	<p className="buttons-itemcart" >	<Link className='out-underline' to='/'> <button className="button1"><span> Seguir Comprando</span></button></Link> 
+	<p className="buttons-itemcart" >	<Link className='out-underline' to='/productos'> <button className="button1"><span> Seguir Comprando</span></button></Link> 
 	 <Link to='/checkout'> <button className="button1"><span> checkout </span></button></Link> </p>	 
 			
 

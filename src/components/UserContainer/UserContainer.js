@@ -11,8 +11,8 @@ const UserContainer=({user}) =>{
         <div className='container-user'>
             <button  className='button1'  onClick={()=> signOut(auth)}>Cerrar Sesion</button>
 
-{user.rol === 'admin' || user.email === 'fabiolacanz@gmail.com' || user.email === '3pasteur20@gmail.com'
-|| user.email === '274860324@qq.com' ? <AdministradorContainer></AdministradorContainer> : <UserView></UserView>  }
+{user.rol === 'admin' || user.email === 'fabiolacanz@gmail.com' || user.email === 'mirepostera@gmail.com'
+|| user.email === 'sarai.pms26@gmail.com' ? <AdministradorContainer></AdministradorContainer> : <UserView></UserView>  }
 
 
         </div>

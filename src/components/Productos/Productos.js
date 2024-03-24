@@ -46,10 +46,10 @@ const Productos =(props)=>{
         <div>
 
 <div className='cart-categorias'>
-<Link to={'/category/esenciasysabores'}>Esencias y Sabores</Link>
-<Link to={'/category/reposteriaydecoracion'}>Reposteria y Decoracion</Link>
-<Link to={'/category/materiasprimas'}>Materias Primas</Link>
-<Link to={'/productos'}>Todos</Link>
+<Link className='titulo-producto' to={'/category/esenciasysabores'}>Esencias y Sabores</Link>
+<Link className='titulo-producto' to={'/category/reposteriaydecoracion'}>Reposteria y Decoracion</Link>
+<Link className='titulo-producto' to={'/category/materiasprimas'}>Materias Primas</Link>
+<Link className='titulo-producto' to={'/productos'}>Todos</Link>
 </div>
 
 <div className="table-responsive "> <ItemList  products={products} /></div>

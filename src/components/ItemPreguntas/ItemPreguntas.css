@@ -1,4 +1,4 @@
-.card_preguntas{ display: flex; flex-direction: column;  margin: 20px; box-shadow: 1px 1px 5px 0px black; width: 800px; height: auto; margin-bottom: 50px;  padding: 5px;  border-radius: 20px 0px 20px 0px; }
+.card_preguntas{ display: flex; flex-direction: column;  margin: 20px; box-shadow: 1px 1px 5px 0px black; width:900px ; height: auto; margin-bottom: 50px;  padding: 5px;  border-radius: 20px 0px 20px 0px; }
 
 .card_preguntas h4{border-bottom: solid rgb(137, 137, 137) 0.1px; padding: 15px; display: flex; flex-direction: row; justify-content: space-between;}
 
@@ -8,7 +8,7 @@
 
 @media screen and (max-width: 767px), (max-width: 1080px) {
 
-    .card_preguntas{margin: 10px; box-shadow: 1px 1px 5px 0px black; width: 150px; height: 280px; margin-bottom: 20px; font-size: 12px;}
+ .card_preguntas{margin: 10px; box-shadow: 1px 1px 5px 0px black; width: 500px; height: auto; margin-bottom: 20px; font-size: 12px;}
 
   
     

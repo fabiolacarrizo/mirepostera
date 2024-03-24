@@ -2,7 +2,11 @@
 
 .cart-footer{ height: 240px; background-color: black;  padding: 30px; display: flex; flex-direction: column; justify-content: center; align-items: center;  }
 
-.cart-footer li{list-style: none; color: white;}
+.cart-footer li{list-style: none; color: white; text-decoration: none;}
+
+.cart-footer a{text-decoration: none;}
+
+.cart-footer li:hover{font-size: 20px; transition: 0.5s;}
 
 .iconos-redes{display: flex; flex-direction: row; margin: 20px; }
 

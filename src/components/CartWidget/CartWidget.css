@@ -2,6 +2,8 @@
 
 .contador{color: white; border-radius: 20px; margin-left: 10px; width: 30px; height: 30px; text-decoration: none; list-style: none;}
 
+.cartWidget img{position: absolute; width: 60px; height: auto; bottom: 1rem; right: 3rem;}
+
 @media (max-width: 1080px) {
-    .cartWidget{ display: flex; flex-direction: row; width:60px ; height: 50px; text-decoration: none;  margin-bottom: 5px; margin-right: 15px; position: absolute; right: 2rem; top: 4.5rem; } 
+    .cartWidget{ display: flex; flex-direction: row; width:60px ; height: 50px; text-decoration: none;  margin-bottom: 5px; margin-right: 15px; position: absolute; right: -2rem; top: 8.5rem; } 
  }
