@@ -84,9 +84,9 @@ font-size: 18px;}
         background: #48839a;
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 90%;
         height: 250px;        
-        transform: translateX(-105%);
+        transform: translateX(-106%);
         transition: 0.3s ease all;
         overflow: hidden;
     }
