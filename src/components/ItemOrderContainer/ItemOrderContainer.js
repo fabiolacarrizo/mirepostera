@@ -4,22 +4,17 @@ import { getDocs, collection, query, where, orderBy, doc, deleteDoc,limit,Timest
 import { db } from "../../service/firebase"
 import {  useParams, useNavigate  } from 'react-router-dom' 
 import Swal from 'sweetalert2'
-import { Link } from 'react-router-dom'
 import deleteprod from '../../assets/img/deleteprod.png'
 import logo2 from '../../assets/img/logo2.png'
-import ItemOrderDetail from '../ItemOrderDetail/ItemOrderDetail'
+
 
 
 
 const ItemOrderContainer= ({ greeting})=>{
   const [orders, setOrders] = useState([])
   const [loading, setLoading] =useState(true) 
-  const [detailOrder, setDetailOrder]=useState(false)
   const [search, setSearch] = useState("")
-  const [ListProd, setListProd] = useState(false);
-  const [addProd, setAddProd] = useState(false);
-  const [ListOrden, setListOrden] = useState(false);
-  const [lgShow, setLgShow] = useState(false);
+
   const navigate = useNavigate()   
   const {orderId} = useParams()
 
@@ -125,22 +120,23 @@ if(!search){
                 <th className="p-hora">Fecha</th>
                 <th>Nombre</th>
                 <th>Telefono</th>
-                <th>Cajas</th>
-                <th>Total</th>
+                <th>Total Productos</th>
                 <th>Productos</th>
+                <th>Total</th>
               </tr>
             </thead>
             <tbody>
               { results.map( (order) => (
                 <tr key={order.id}>
-                  <td>{order.date.toLocaleString('en-US')}</td>
+                  <td className="p-fecha">{order.date.toLocaleString('en-US')}</td>
                   <td>{order.buyer.name}</td>
                   <td>{order.buyer.tlf}</td>
                   <td>{order.totalproducts}</td> 
+                  <td>{order.items.map((items)=>{return <div> Cantidad:{items.quantity} Precio: USD${items.precioVenta} SubTotal: USD$ {items.quantity * items.precioVenta}</div>} )}</td>
                   <td>USD${order.total}</td>
-                  <td>{order.items.map((items)=>{return <div>  DQ{items.code} Cantidad:{items.quantity} Precio: USD${items.precioVenta} SubTotal: USD$ {items.quantity * items.precioVenta}</div>} )}</td>
-<td>  <button  onClick={ () => { confirmDelete(order.id) } } className='botoneliminar'><img src={deleteprod}></img></button></td>
-                </tr>    
+                  <td>  <button  onClick={ () => { confirmDelete(order.id) } } className='botoneliminar'><img src={deleteprod}></img></button></td>
+                
+                 </tr>    
               )) }
             </tbody>
   

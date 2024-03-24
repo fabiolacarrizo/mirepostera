@@ -17,8 +17,8 @@ import logo2 from '../../assets/img/logo2.png'
     
 	const [datosCompra, setDatosCompra] = useState({}) 
 
-const completoDatos = (name, tlf, email, checkEmail, direction, directionNumber, cp,location, province, comment) =>{
-	setDatosCompra({name, tlf, email, checkEmail, direction, directionNumber, cp,location, province, comment})
+const completoDatos = (name, tlf, email, checkEmail, direction, cp,ciudad, estado, comment) =>{
+	setDatosCompra({name, tlf, email, checkEmail, direction, cp,ciudad, estado, comment})
 	setPersonalData(true)
 }
 
@@ -30,7 +30,6 @@ const completoDatos = (name, tlf, email, checkEmail, direction, directionNumber,
 			precioVenta: data.precioVenta,
 			price:data.price,
 			quantity: data.quantity,
-			code: data.code,
 			category: data.category,
 			priceCaja:data.priceCaja,
 		})),
@@ -81,7 +80,7 @@ const clickCompra = ()=>{
 }
 */
 
-const wPedido= `https://api.whatsapp.com/send?phone=5491126222492&text=Hola,%20Quisiera%20realizar%20un%20pedido.%0ACliente:%20${order.buyer.name}%20TLF:${order.buyer.tlf}%20Email:${order.buyer.email}%0ADatos%20Envio:%0ADireccion:%20${order.buyer.direction}%0AAltura:%20${order.buyer.directionNumber}%0ALocalidad:%20${order.buyer.location}%0AProvincia:%20${order.buyer.province}%0ACP:%20${order.buyer.cp}%0ATransporte:%20${order.buyer.comment}
+const wPedido= `https://api.whatsapp.com/send?phone=5491126222492&text=Hola,%20Quisiera%20realizar%20un%20pedido.%0ACliente:%20${order.buyer.name}%20TLF:${order.buyer.tlf}%20Email:${order.buyer.email}%0ADatos%20Envio:%0ADireccion:%20${order.buyer.direction}%0ALocalidad:%20${order.buyer.ciudad}%0AProvincia:%20${order.buyer.estado}%0ACP:%20${order.buyer.cp}%0ATransporte:%20${order.buyer.comment}
 %0AProductos:%0A${order.items.map((items)=>{return `%20-${items.title}+%20DQ${items.code}+%20${items.precioVenta === items.price ? 'Bultos' :'Cajas'}%20${items.quantity}+x%20Precio%20USD$${items.precioVenta === items.price ? items.price : items.precioVenta}%20=%20SubTotal%20USD$${items.precioVenta === items.price ? items.quantity * items.price :  items.quantity * items.precioVenta  }%0A ` })}
 %0ATotal%20Productos:%20${order.totalproducts}
 %0ATotal:USD$${order.total}`

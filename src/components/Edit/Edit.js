@@ -13,13 +13,11 @@ import {
 
 const Edit = ({}) => {
     const [name, setName] = useState("");
-    const [code, setCode] = useState("");
     const [description, setDescription] = useState("");
     const [stockbox, setStockbox] = useState("");
     const [boxcont, setBoxcont] = useState("");
     const [price, setPrice] = useState("");
     const [category, setCategory]= useState("");
-    const [costo, setCosto]= useState("");
     const [img, setImg]= useState("");
     const [visible, setVisible]= useState("");
     const [priceCaja, setPriceCaja] = useState("");
@@ -46,18 +44,16 @@ const Edit = ({}) => {
         const product = doc(db, "products", id)
         const data = {description: description,
              name: name,
-             code : code, 
              stockbox:stockbox, 
              boxcont:boxcont,
              price: price,
              category: category,
-             costo:costo, 
              img: img,
               visible:visible,
             priceCaja:priceCaja,
             cantidadxCaja:cantidadxCaja}
         await updateDoc(product, data)
-        navigate(navigate(-1))
+        navigate('/login')
     }
 
 
@@ -67,12 +63,10 @@ const Edit = ({}) => {
             //console.log(product.data())
             setDescription(product.data().description)    
             setName(product.data().name)
-            setCode(product.data().code)
             setStockbox(product.data().stockbox)
             setBoxcont(product.data().boxcont)
             setPrice(product.data().price)
             setCategory(product.data().category)
-            setCosto(product.data().costo)
             setImg(product.data().img)
             setVisible(product.data().visible)
             setPriceCaja(product.data().priceCaja)
@@ -89,9 +83,14 @@ const Edit = ({}) => {
 
 
     return (
-    
+      <div>
+
+    <h1 className='titulo1'>Editar Producto</h1>
+
       <div className='container-editarproductos'>
-       
+
+   <button  className="botonvolver" onClick={() => (navigate(-1)) }>Volver</button>
+      
  <div className='cart-cargaimg'>
      <input 
         type="file"
@@ -107,8 +106,8 @@ const Edit = ({}) => {
         <div className='row'>
             <div className='col'>
 
-                <h1>Editar Producto</h1>
-                  <button  className="botonvolver" onClick={() => (navigate(-1)) }>Volver</button>
+               
+               
 
    <form className='container-edit'  method="post" >
      
@@ -128,14 +127,8 @@ const Edit = ({}) => {
 
  <div className='cart-cargadato'> <label>Nombre: </label>  
  <input value={name} onChange={(e) => setName(e.target.value)} type='text'></input> 
-  <label>Codigo:DQ</label> 
-  <input value={code} onChange={(e) => setCode(e.target.value)} type='number'></input> </div> 
-  
- <div className='cart-cargadato'> <label>Costo: USD$ </label>  
- <input value={costo} onChange={(e) => setCosto(e.target.value)} placeholder='costo' type='number'></input>  
- 
+  </div> 
 
-  </div>  
 
 <div className='cart-cargadato'> 
 <label>Categoria:</label>
@@ -158,25 +151,25 @@ const Edit = ({}) => {
 </div>  
 
 
- <h5 className='h5-edit'>Cajas:</h5>
+ <h5 className='h5-edit'>Unidad:</h5>
   <div className='cart-cargadato'>
 <label>Precio: USD$</label> 
   <input  value={priceCaja} onChange={(e) => setPriceCaja(e.target.value)}type='text'></input>
   
-  <label>Unidades por Caja: </label> 
+  <label>Descripcion:</label> 
   <input  value={cantidadxCaja} onChange={(e) => setCantidadxCaja(e.target.value)} type='text'></input> 
   
    </div> 
 
- <h5 className='h5-edit'>Bultos:</h5>
+ <h5 className='h5-edit'>Mayorista:</h5>
 
  <div className='cart-cargadato'> 
 
-  <label>Precio de Venta: USD$</label>  
+  <label>Precio: USD$</label>  
  <input value={price} onChange={(e) => setPrice(e.target.value)} type='number'></input>
 
-   <label>Cantidad x Bulto: </label> 
-  <input value={boxcont} onChange={(e) => setBoxcont(e.target.value)} type='number'></input> 
+   <label>Descripcion:</label> 
+  <input value={boxcont} onChange={(e) => setBoxcont(e.target.value)} type='text'></input> 
 
 
   
@@ -189,7 +182,8 @@ const Edit = ({}) => {
             </div>
         </div>
     </div>
-     </div>  
+     </div> 
+      </div>
     )
 }
 

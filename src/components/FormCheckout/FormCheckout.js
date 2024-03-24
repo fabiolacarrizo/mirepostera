@@ -26,16 +26,15 @@ const FormCheckout = ({completoDatos})=>{
     const [email, setEmail] = useState("");
     const [checkEmail, setCheckEmail] = useState("");
     const [direction, setDirection] = useState("");
-    const [directionNumber, setDirectionNumber] = useState("");
     const [cp, setCp] = useState("");
-    const [location, setLocation] = useState("");
-    const [province, setProvince] = useState("");
+    const [ciudad, setCiudad] = useState("");
+    const [estado, setEstado] = useState("");
     const [comment, setComment] = useState ("");
 
 
 const submit = (e) => {
     e.preventDefault ();
-    if (!name || !tlf || !email || !checkEmail || !direction || !direction || !directionNumber || !cp || !location || !province || !comment )
+    if (!name || !tlf || !email || !checkEmail || !direction || !direction || !cp || !ciudad || !estado || !comment )
         {
             return(
                 Swal.fire('Completa tus datos porfavor') 
@@ -53,10 +52,9 @@ const submit = (e) => {
         email,
         checkEmail,
         direction,
-        directionNumber,
         cp,
-        location,
-        province,
+        ciudad,
+        estado,
         comment,
     )
       return(
@@ -98,22 +96,21 @@ const submit = (e) => {
 
 <h4>Datos para Envio</h4>
 
-<p>  <label>Domicilio</label>
- <input value={direction} onChange={(e) => setDirection(e.target.value)} type='text' placeholder='Domicilio'  required></input> 
- <label>Nro</label> <input value={directionNumber} onChange={(e) => setDirectionNumber(e.target.value)} type='Number' placeholder='Altura'  required style={{width:80}}></input>
+<p>  <label>Direccion</label>
+ <input value={direction} onChange={(e) => setDirection(e.target.value)} type='text' placeholder='Direccion'  required></input> 
 
  <label>CP</label>
  <input value={cp} onChange={(e) => setCp(e.target.value)} type='number' placeholder='CP' required style={{width:80}}></input></p>
 
- <p>  <label>Localidad</label>
- <input value={location} onChange={(e) => setLocation(e.target.value)} type='text' placeholder='Localidad'  required></input>
+ <p>  <label>Ciudad</label>
+ <input value={ciudad} onChange={(e) => setCiudad(e.target.value)} type='text' placeholder='Ciudad'  required></input>
 
-  <label>Provincia</label>
- <input value={province} onChange={(e) => setProvince(e.target.value)} type='text' placeholder='Provincia'  required></input></p>
+  <label>Estado</label>
+ <input value={estado} onChange={(e) => setEstado(e.target.value)} type='text' placeholder='Estado'  required></input></p>
 
 
-<label>Transporte:</label>
-<p> <textarea className='cart-textarea' value={comment} onChange={(e) => setComment(e.target.value)} name="comentarios" placeholder="Indiquenos aca si el pedido sera enviado por un transporte y el nombre del mismo, tenga en cuenta que el costo del envio es a cargo del comprador. ¡Gracias!" id="" rows="2" required></textarea></p>
+<label>Forma de Envio:</label>
+<p> <textarea className='cart-textarea' value={comment} onChange={(e) => setComment(e.target.value)} name="comentarios" placeholder="Indiquenos aca la modalidad de envio, tenga en cuenta que el costo del envio es a cargo del comprador en su totalidad. ¡Gracias!" id="" rows="2" required></textarea></p>
  
 <button className='button1' onClick = {submit}><span>Confirmar Datos</span> </button>
  </div> 

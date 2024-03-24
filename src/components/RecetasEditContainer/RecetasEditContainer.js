@@ -86,7 +86,7 @@ const RecetasEditContainer =({ greeting})=>{
 
     return(
         <div>
-<h1>Recetas Edicion</h1>
+<h1 className='titulo1'>Recetas Edicion</h1>
 
 <ItemAddReceta></ItemAddReceta>
 
@@ -103,14 +103,16 @@ const RecetasEditContainer =({ greeting})=>{
         <tr>
           <th>Nombre</th>
           <th>Descripcion</th>
+          <th>Editar</th>
           <th>Borrar</th>
         </tr>
       </thead>
       <tbody>
         { results.map( (tarea) => (
           <tr key={tarea.id}>
-            <td>{tarea.name}</td>
-            <td>{tarea.description}</td>
+            <td className='descricionrec'>{tarea.name}</td>
+            <td className='descricionrec'>{tarea.description}</td>
+            <td>Editar</td>
             <td style={{textAlign:'center'}} >  <button  onClick={ () => { confirmDelete(tarea.id) } } className='botoneliminar'>X </button></td>
           </tr>    
         )) }

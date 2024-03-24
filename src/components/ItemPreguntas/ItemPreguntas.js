@@ -1,17 +1,27 @@
 import './ItemPreguntas.css'
 import { Link } from 'react-router-dom'
+import arrowb from '../../assets/img/arrowb.png'
+import { useState } from 'react'
 
-const Item = ({ name, description, img}) =>{
-  
+const ItemPreguntas = ({ name, description}) =>{
+  const [mostrarMas, setMostrarMas]= useState(false)
 
        return(
         <div className='card_preguntas'>
-         <div> {name}</div>
-        <div> {description}</div> 
+       <div> 
+        <h4> 
+            {name}
+        <button onClick={()=>setMostrarMas(!mostrarMas)}>
+       {mostrarMas ? <img className='flecha-alreves' src={arrowb}></img> : <img src={arrowb}></img> } </button>
+              </h4>
+               </div> 
+
+      { mostrarMas ? <div> {description}</div> : null }  
+
         </div>
     ) 
     
 
 }
 
-export default Item
+export default ItemPreguntas

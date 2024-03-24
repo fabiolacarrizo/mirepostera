@@ -15,7 +15,7 @@
 
 @media screen and (max-width: 767px), (max-width: 1080px) {
 
-    .card_productos{margin: 10px; box-shadow: 1px 1px 5px 0px black; width: 150px; height: 280px; margin-bottom: 20px; font-size: 12px;}
+    .card_productos{margin: 10px; box-shadow: 1px 1px 5px 0px black; width: 150px; height: 300px; margin-bottom: 20px; font-size: 12px;}
 
     .card_productos h5{font-size: 15px;}
     .card_productos h3{font-size: 17px;}

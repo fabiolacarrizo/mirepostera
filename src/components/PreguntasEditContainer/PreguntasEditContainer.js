@@ -52,12 +52,12 @@ const deleteProduct = async (id) => {
     confirmButtonText: 'Si, quiero eliminar!'
   }).then((result) => {
     if (result.isConfirmed) { 
-      //llamamos a la fcion para eliminar   
+      //llamamos a la fcion para eliminar    
+     // navigate('/listadeproductosadmi')    
       deleteProduct(id)    
-    //  navigate('/')           
+   
       Swal.fire(
-        'Eliminado!',
-        'success'
+        'Eliminado!'
       )
     }
   })    
@@ -89,7 +89,7 @@ if(!search){
 
   return (
 <div>
-     
+     <h1 className='titulo1'>Preguntas Frecuentes</h1>
     <div className='container-tareas' style={{marginTop:20, }}>
 
   <div className='container'> 
@@ -109,14 +109,17 @@ if(!search){
               <tr>
                 <th>Nombre</th>
                 <th>Descripcion</th>
+               <th>Editar</th>
                 <th>Borrar</th>
+               
               </tr>
             </thead>
             <tbody>
               { results.map( (tarea) => (
                 <tr key={tarea.id}>
-                  <td>{tarea.name}</td>
-                  <td>{tarea.description}</td>
+                  <td className='descricionpreg'>{tarea.name}</td>
+                  <td className='descricionpreg'>{tarea.description}</td>
+                  <td>Editar</td>
                   <td style={{textAlign:'center'}} >  <button  onClick={ () => { confirmDelete(tarea.id) } } className='botoneliminar'>X </button></td>
                 </tr>    
               )) }

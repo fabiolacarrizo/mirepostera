@@ -1,5 +1,10 @@
-.card_preguntas{ display: flex; flex-direction: column; margin: 20px; box-shadow: 1px 1px 5px 0px black; width: 800px; height: auto; margin-bottom: 50px;  padding: 5px; }
+.card_preguntas{ display: flex; flex-direction: column;  margin: 20px; box-shadow: 1px 1px 5px 0px black; width: 800px; height: auto; margin-bottom: 50px;  padding: 5px;  border-radius: 20px 0px 20px 0px; }
 
+.card_preguntas h4{border-bottom: solid rgb(137, 137, 137) 0.1px; padding: 15px; display: flex; flex-direction: row; justify-content: space-between;}
+
+.card_preguntas img{width: 40px; height: 40px;}
+
+.flecha-alreves{transform: rotate(180deg);}
 
 @media screen and (max-width: 767px), (max-width: 1080px) {
 
