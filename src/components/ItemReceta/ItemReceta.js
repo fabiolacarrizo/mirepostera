@@ -9,10 +9,6 @@ const ItemReceta = ({ name, img, description}) =>{
 
             <img className='card_productosImgrec' src={img} ></img>
   
-  <div className='cart-inforeceta'>
-         <h3>{name} </h3>
-        <p>{description}</p> 
-    </div>    
 
         </div>
     ) 

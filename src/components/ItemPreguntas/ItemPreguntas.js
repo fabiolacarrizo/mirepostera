@@ -16,7 +16,7 @@ const ItemPreguntas = ({ name, description}) =>{
               </h4>
                </div> 
 
-      { mostrarMas ? <div> {description}</div> : null }  
+      { mostrarMas ? <div className='p-pregunta'> {description}</div> : null }  
 
         </div>
     ) 

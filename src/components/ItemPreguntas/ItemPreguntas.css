@@ -4,11 +4,13 @@
 
 .card_preguntas img{width: 40px; height: 40px;}
 
+.p-pregunta{font-size: 20px;}
+
 .flecha-alreves{transform: rotate(180deg);}
 
 @media screen and (max-width: 767px), (max-width: 1080px) {
 
- .card_preguntas{margin: 10px; box-shadow: 1px 1px 5px 0px black; width: 500px; height: auto; margin-bottom: 20px; font-size: 12px;}
+ .card_preguntas{margin: 10px; box-shadow: 1px 1px 5px 0px black; width: 90%; height: auto; margin-bottom: 20px; font-size: 12px;}
 
   
     

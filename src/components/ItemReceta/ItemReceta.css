@@ -1,6 +1,6 @@
-.card_receta{ display: flex;   margin: 20px; box-shadow: 1px 1px 5px 0px black; width: 90%; height: auto; margin-bottom: 50px;  padding: 5px; }
+.card_receta{ display: flex;   margin: 20px; box-shadow: 1px 1px 5px 0px black; margin-bottom: 50px;  padding: 5px; }
 
-.card_productosImgrec{width: 40%; height: auto; object-fit: cover; margin-bottom: 10px; bottom: 0%;display: flex; justify-content: end; }
+.card_productosImgrec{width: 100%; height: auto; object-fit: cover; margin-bottom: 10px; bottom: 0%;display: flex; justify-content: end; }
 
 .cart-inforeceta{display: flex; flex-direction: column;  align-items: center;}
 

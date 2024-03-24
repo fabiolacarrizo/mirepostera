@@ -1,1 +1,3 @@
-.container-preguntas{display: flex; flex-direction: column;  align-items: center; height: 100vh;}
+.container-preguntas{display: flex; flex-direction: column;  align-items: center; height: 100%;}
+
+.container-preguntas h1{margin: 20px; background-color:antiquewhite;; color: rgb(179, 15, 15); padding: 10px; width: 70%;  box-shadow: black 6px 0px 8px 1px;}
