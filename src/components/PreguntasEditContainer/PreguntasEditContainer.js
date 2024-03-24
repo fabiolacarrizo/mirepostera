@@ -4,8 +4,6 @@ import { getDocs, collection, query, where, orderBy, doc, deleteDoc,limit,Timest
 import { db } from "../../service/firebase"
 import {  useParams, useNavigate  } from 'react-router-dom' 
 import Swal from 'sweetalert2'
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
 import ItemAddPreguntas from '../ItemAddPreguntas/ItemAddPreguntas'
 import logo2 from '../../assets/img/logo2.png'
 
@@ -16,9 +14,7 @@ const PreguntasEditContainer= ({ greeting})=>{
   const [search, setSearch] = useState("")
   const navigate = useNavigate()   
   const {orderId} = useParams()
-  const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+
 
 useEffect(()=>{
   setLoading(true)

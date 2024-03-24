@@ -1,0 +1,12 @@
+.card_receta{ display: flex;   margin: 20px; box-shadow: 1px 1px 5px 0px black; width: 900px; height: auto; margin-bottom: 50px;  padding: 5px; }
+
+
+.card_productosImgrec{width: 40%; height: 320px; object-fit: cover; margin-bottom: 10px; bottom: 0%;display: flex; justify-content: end; }
+
+
+@media screen and (max-width: 767px), (max-width: 1080px) {
+
+    .card_receta{margin: 10px; box-shadow: 1px 1px 5px 0px black; width: 150px; height: 280px; margin-bottom: 20px; font-size: 12px;}
+
+    
+   }

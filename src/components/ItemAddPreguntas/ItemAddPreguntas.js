@@ -21,7 +21,7 @@ const ItemAddPreguntas = () => {
             Swal.fire('Completa los datos porfavor') 
         )
     }else {
-        Swal.fire('Tarea Agregada') 
+        Swal.fire('Pregunta Agregada') 
     } 
 
     await addDoc( productsCollection, { description: description, name: name,  } )
