@@ -45,7 +45,7 @@ const Productos =(props)=>{
     return(
         <div>
 
-<div className='cart-categorias'>
+<div className='cart-categoriasprod'>
 <Link className='titulo-producto' to={'/category/esenciasysabores'}>Esencias y Sabores</Link>
 <Link className='titulo-producto' to={'/category/reposteriaydecoracion'}>Reposteria y Decoracion</Link>
 <Link className='titulo-producto' to={'/category/materiasprimas'}>Materias Primas</Link>

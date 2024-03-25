@@ -1,1 +1,9 @@
 .container-recetas{ display: flex; flex-direction: column; align-items: center; height: 100%; }
+
+.portadareceta{background-image: url('../../assets//img/recetasportada.png');width: 100%; height: 300px;background-size: cover; margin-bottom: 60px;}
+
+
+@media screen and (max-width: 1080px) {
+
+    .portadareceta{background-image: url('../../assets//img/recetasportada.png');width: 100%; height: 130px;background-size: cover; margin-bottom: 50px;}
+   }

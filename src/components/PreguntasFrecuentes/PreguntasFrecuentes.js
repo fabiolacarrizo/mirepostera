@@ -41,7 +41,9 @@ const PreguntasFrecuentes =(props)=>{
       
     return(
         <div className='container-preguntas'>
-<h1 >Preguntas Frecuentes</h1>
+
+<div className='portadapreg'></div>
+
 <ItemPreguntasList  preguntasfrecuentes={preguntasfrecuentes} />
         </div>
     )

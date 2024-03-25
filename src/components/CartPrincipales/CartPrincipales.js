@@ -33,7 +33,7 @@ return(
 <div className='cart-p'>
     <div className='face front'>
 <img src={gliter}></img>
-<h3>Reporteria y Decoracion</h3>
+<h3>Reposteria y Decoracion</h3>
      </div>
 
      <div className='face back'>

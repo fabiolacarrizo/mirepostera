@@ -42,7 +42,8 @@ const Recetas =(props)=>{
     return(
         <div className='container-recetas'>
 
-<h1 className='titulo1'>Recetas</h1>
+<div className='portadareceta'></div>
+
 <ItemRecetaList  recetas={recetas} />
         </div>
     )
