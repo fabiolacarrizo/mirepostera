@@ -47,7 +47,7 @@ const ItemAddReceta = () => {
   };
 
   return (
-    <div className='container'>
+    <div className='container cart-addpreg'>
         <div className='row'>
             <div className='col'>
      <div className='cart-cargaimgrec'>

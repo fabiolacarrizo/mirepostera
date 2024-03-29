@@ -13,7 +13,7 @@ const Cart = () => {
 		return (
 		 <div className="cart-Container">
 				<h4>No hay elementos en el carrito</h4>
-				<Link className="botonSeguirComprando" to="/productos"> Hacer compras</Link>
+				<Link className="btn" to="/productos"> <span> Hacer compras</span></Link>
 		</div>
 		);
 	}

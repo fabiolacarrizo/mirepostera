@@ -29,7 +29,7 @@ const ItemAddPreguntas = () => {
   }
 
   return (
-    <div className='container'>
+    <div className='container cart-addpreg'>
         <div className='row'>
             <div className='col'>
      

@@ -2,7 +2,7 @@
 
 .loding-logo{margin-right: 2%;}
 
-.titulo-producto{color: white; background-color: brown; padding: 10px; height: 45px; width: 20%; text-decoration: none; box-shadow: black 6px 0px 8px 1px; font-size: 20px; margin: 10px;}
+.titulo-producto{color: white; background-color: brown; padding: 10px; height: auto; width: 20%; text-decoration: none; box-shadow: black 6px 0px 8px 1px; font-size: 20px; margin: 10px;}
 
 .titulo-producto:hover{font-size: 25px; transition: 0.5s;}
 
@@ -13,7 +13,7 @@
 
     .loding-logo{margin-right: 2%;}
     
-    .titulo-producto{color: white; background-color: brown; margin: 5px; padding: 10px; width: 80%; text-decoration: none; box-shadow: black 6px 0px 8px 1px; font-size: 20px;}
+    .titulo-producto{color: white; background-color: brown; margin: 5px; padding: 10px; width: 80%; text-decoration: none; box-shadow: black 6px 0px 8px 1px; font-size: 20px; height: auto;}
     
     .titulo-producto:hover{font-size: 25px; transition: 0.5s;}
       

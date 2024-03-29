@@ -2,7 +2,7 @@
 
 .container-preguntas h1{margin: 20px; background-color:antiquewhite;; color: rgb(179, 15, 15); padding: 10px; width: 70%;  box-shadow: black 6px 0px 8px 1px;}
 
-.portadapreg{background-image: url('../../assets//img/preguntasportada2.png');width: 100%; height: 300px;background-size: cover; margin-bottom: 60px;}
+.portadapreg{background-image: url('../../assets//img/preguntasportada2.png');width: 100%; height: 400px;background-size: cover; margin-bottom: 60px;}
 
 @media screen and (max-width: 1080px) {
 

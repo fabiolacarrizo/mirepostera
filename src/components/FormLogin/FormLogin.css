@@ -4,6 +4,8 @@
 
 .form-login button{margin: 10px;}
 
+.button-registrado{display: none;}
+
 .form-login input{ padding-left: 15px; width: 80%; border: 0;  border-bottom: 1px solid #000; background: inherit;
     background-color:transparent;  }
 

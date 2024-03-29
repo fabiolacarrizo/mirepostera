@@ -17,7 +17,7 @@
  
  .nav_logo img{ width: auto; 
     height: 150px;
-margin-top: 20px;}
+margin-top: 6px;}
  
  .nav_items{ display: flex;
     flex-direction: row; 
@@ -48,7 +48,7 @@ font-size: 18px;}
  
  .button2{text-decoration: none; color:white; margin: 5px;}
  
- .button2:hover{color: #e7ef4c; text-shadow:2px #000000;}
+ .button2:hover{color: #FFDE59; text-shadow:2px #000000;}
  
  @media  (max-width: 1080px) {
  

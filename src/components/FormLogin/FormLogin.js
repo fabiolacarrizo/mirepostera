@@ -75,7 +75,7 @@ return(
 <p className='buttons-login'>
 <button className='button1' type='submit'  >  { isRegistrando ? "Registrate" : "Iniciar Sesion"}</button>
 
-<button className='button1' onClick={()=> setIsRegistrando(!isRegistrando)}>
+<button className='button-registrado' onClick={()=> setIsRegistrando(!isRegistrando)}>
     {isRegistrando ? "Ya Tengo Cuenta" : "Quiero Registrarme"}
 </button>
 </p>
