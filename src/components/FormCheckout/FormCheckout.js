@@ -12,7 +12,6 @@ export const FormData = createContext({
   checkEmail:"",
   direction:"",
   directionNumber:"",
-  cp:"",
   location:"",
   province:"",
   comment:"",
@@ -26,7 +25,6 @@ const FormCheckout = ({completoDatos})=>{
     const [email, setEmail] = useState("");
     const [checkEmail, setCheckEmail] = useState("");
     const [direction, setDirection] = useState("");
-    const [cp, setCp] = useState("");
     const [ciudad, setCiudad] = useState("");
     const [estado, setEstado] = useState("");
     const [comment, setComment] = useState ("");
@@ -34,7 +32,7 @@ const FormCheckout = ({completoDatos})=>{
 
 const submit = (e) => {
     e.preventDefault ();
-    if (!name || !tlf || !email || !checkEmail || !direction || !direction || !cp || !ciudad || !estado || !comment )
+    if (!name || !tlf || !email || !checkEmail || !direction || !direction ||  !ciudad || !estado || !comment )
         {
             return(
                 Swal.fire('Completa tus datos porfavor') 
@@ -52,7 +50,6 @@ const submit = (e) => {
         email,
         checkEmail,
         direction,
-        cp,
         ciudad,
         estado,
         comment,
@@ -98,9 +95,7 @@ const submit = (e) => {
 
 <p>  <label>Direccion</label>
  <input value={direction} onChange={(e) => setDirection(e.target.value)} type='text' placeholder='Direccion'  required></input> 
-
- <label>CP</label>
- <input value={cp} onChange={(e) => setCp(e.target.value)} type='number' placeholder='CP' required style={{width:80}}></input></p>
+</p>
 
  <p>  <label>Ciudad</label>
  <input value={ciudad} onChange={(e) => setCiudad(e.target.value)} type='text' placeholder='Ciudad'  required></input>

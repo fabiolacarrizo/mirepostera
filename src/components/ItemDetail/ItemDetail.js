@@ -60,10 +60,10 @@ if ( precioVenta <= 0 )
 
       <div onChange={(e) => setPrecioVenta(e.target.value)}>
         <p><input  type="radio" value={priceCaja} name="tipoventa"/> 
-        <span></span> USD${priceCaja} | {cantidadxCaja} </p> 
+        <span></span>  USD${priceCaja} | {cantidadxCaja} </p> 
 
         <p> <input type="radio" value={price} name="tipoventa" /> 
-       <span></span> USD${price} | {boxcont} </p>
+       <span></span>  USD${price} | {boxcont} </p>
       </div>
     
 

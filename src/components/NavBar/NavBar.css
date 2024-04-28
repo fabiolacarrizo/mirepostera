@@ -3,6 +3,9 @@
     height: 210px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
 
  }
  .nav_logo{
@@ -10,7 +13,7 @@
     width: 450px; 
     height: 250px;
     margin-bottom: 20px;
-    margin-right: 45%;
+    margin-right: 35%;
     color: white;
     display: flex;
     flex-direction: column;

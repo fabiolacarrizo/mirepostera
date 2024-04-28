@@ -17,8 +17,8 @@ import logo2 from '../../assets/img/logo2.png'
     
 	const [datosCompra, setDatosCompra] = useState({}) 
 
-const completoDatos = (name, tlf, email, checkEmail, direction, cp,ciudad, estado, comment) =>{
-	setDatosCompra({name, tlf, email, checkEmail, direction, cp,ciudad, estado, comment})
+const completoDatos = (name, tlf, email, checkEmail, direction,ciudad, estado, comment) =>{
+	setDatosCompra({name, tlf, email, checkEmail, direction,ciudad, estado, comment})
 	setPersonalData(true)
 }
 
