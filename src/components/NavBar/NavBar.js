@@ -28,8 +28,7 @@ const NavBar= ()=>{
     <div className="nav_logo"><Link to={'/'}><img src={logomr}></img></Link>  
     <ul>
     <li>RIF J-50445575-0 </li>
-    <li>Guatire - Edo.Miranda</li>
-    <li>Emprendimiento Mariann Mendoza</li>
+    <li >Guatire - Edo.Miranda</li>
     </ul>
     </div>
     

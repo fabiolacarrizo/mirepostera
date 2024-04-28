@@ -1,35 +1,33 @@
 .navbar{   
     background:#48839a;
-    height: 200px;
+    height: 210px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
- 
+
  }
  .nav_logo{
     font-weight: bold;
     width: 450px; 
     height: 250px;
     margin-bottom: 20px;
-    margin-top: 15px;
-    margin-right: 35%;
+    margin-right: 45%;
     color: white;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
  }
 
- .nav_logo li{list-style: none; margin-top: 5px;}
+ .nav_logo li{list-style: none; margin-top: 2px;}
  
  .nav_logo img{ width: auto; 
     height: 150px;
-margin-top: 6px;}
+margin-top: 1px;}
  
  .nav_items{ display: flex;
     flex-direction: row; 
-    justify-content: center;
+margin-top: 80px;
     color: white;
-    margin-left: 5%;
+    margin-left: 2%;
 font-size: 18px;}
  
  
@@ -64,18 +62,20 @@ font-size: 18px;}
  
     .card-menuDespleglable{position:relative;}
  
-    .nav_logo img{ width: auto; 
+    .nav_logo img{ margin-left: 30px; width: auto; 
        height: 70px;}
     
-    .nav_logo li{list-style: none; font-size: 7px; }
+    .nav_logo li{list-style: none; font-size: 8px; }
     
     .nav_logo{
        font-weight: bold;
-       width: 100px; 
+       width: 150px; 
        height: 50px;
        margin-bottom: 80px;
-       margin-right: 50%;
+       margin-right: 35%;
        color: white;
+       display: flex; 
+       align-items: center;
     }
     
     .navbar{   
@@ -94,6 +94,7 @@ font-size: 18px;}
         background: #48839a;
         display: flex;
         flex-direction: column;
+        margin-top: 0px;
         width: 90%;
         height: 250px;        
         transform: translateX(-106%);
