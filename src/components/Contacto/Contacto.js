@@ -10,7 +10,7 @@ const Contacto = ()=>{
   const [consulta, setConsulta]=useState("")
 
 
-    const wMensaje= `https://api.whatsapp.com/send?phone=5491126222492&text=Hola!%20Tengo%20una%20consulta%20desde%20la%20web%20MI%20REPOSTERA%0ADatos:%0ANombre:%20${name}%0ATlf:%20${tlf}%0ACiudad:%20${city}%0AConsulta:%20${consulta}%0A`
+    const wMensaje= `https://api.whatsapp.com/send?phone=584120980694&text=Hola!%20Tengo%20una%20consulta%20desde%20la%20web%20MI%20REPOSTERA%0ADatos:%0ANombre:%20${name}%0ATlf:%20${tlf}%0ACiudad:%20${city}%0AConsulta:%20${consulta}%0A`
 
 
     return(
