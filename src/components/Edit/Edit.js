@@ -14,7 +14,6 @@ import {
 const Edit = ({}) => {
     const [name, setName] = useState("");
     const [description, setDescription] = useState("");
-    const [stockbox, setStockbox] = useState("");
     const [boxcont, setBoxcont] = useState("");
     const [price, setPrice] = useState("");
     const [category, setCategory]= useState("");
@@ -44,7 +43,6 @@ const Edit = ({}) => {
         const product = doc(db, "products", id)
         const data = {description: description,
              name: name,
-             stockbox:stockbox, 
              boxcont:boxcont,
              price: price,
              category: category,
@@ -63,7 +61,6 @@ const Edit = ({}) => {
             //console.log(product.data())
             setDescription(product.data().description)    
             setName(product.data().name)
-            setStockbox(product.data().stockbox)
             setBoxcont(product.data().boxcont)
             setPrice(product.data().price)
             setCategory(product.data().category)
@@ -112,11 +109,12 @@ const Edit = ({}) => {
    <form className='container-edit'  method="post" >
      
   <div className='cart-cargadato'> 
-                <label>Visible:</label>
-<div onChange={(e) => setVisible(e.target.value)}>
+                <label>Visible: {visible}. </label>
+                <p>Cambiar= <div onChange={(e) => setVisible(e.target.value)}>
         <input type="radio" value="publico" name="visible" /> Publico
         <input type="radio" value="privado" name="visible" />Privado
-      </div>
+      </div></p>
+
 
                   </div>
 
@@ -131,9 +129,9 @@ const Edit = ({}) => {
 
 
 <div className='cart-cargadato'> 
-<label>Categoria:</label>
+<label>Categoria: {category}</label>
 <div onChange={(e) => setCategory(e.target.value)}>
-       <span><input type="radio" value="esenciasysabores" name="category" /> Esencias y Sabores</span> 
+        <input type="radio" value="esenciasysabores" name="category" /> Esencias y Sabores
         <input type="radio" value="reposteriaydecoracion" name="category" />Reposteria y Decoracion
         <input type="radio" value="materiasprimas" name="category" /> Materias Primas
       </div>
@@ -144,11 +142,6 @@ const Edit = ({}) => {
 
 <label>Descripcion: </label> 
   <input className='p-descripcion'  value={description} onChange={(e) => setDescription(e.target.value)} placeholder='Ej: analogico, sumergible, elastizado' type='text'></input> </div>  
-
-<div className='cart-cargadato'> 
- <label>Stock Cajas:</label> 
-  <input value={stockbox} onChange={(e) => setStockbox(e.target.value)} type='number'></input>
-</div>  
 
 
  <h5 className='h5-edit'>Unidad:</h5>

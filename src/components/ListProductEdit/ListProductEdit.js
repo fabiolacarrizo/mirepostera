@@ -123,7 +123,7 @@ if(!search){
  <h3>Editor</h3>
 
  <div className='barra-buscar'>
-       <input value={search} onChange={searcher} type='text' placeholder="BUSCAR: Codigo - Categoria - Publico o privado" className="form-control"></input>
+       <input value={search} onChange={searcher} type='text' placeholder="BUSCAR: Nombre - Categoria " className="form-control"></input>
  </div>
 
       <div className='row'>
@@ -134,8 +134,8 @@ if(!search){
               <tr>
                 <th>Nombre</th>
                 <th>Categoria</th>
-                <th>Precio 1</th>
-                <th>Precio 2</th>
+                <th>Precio Detal</th>
+                <th>Precio Mayorista</th>
                 <th>Visible</th>
                 <th>Editar</th>
                 <th>Eliminar</th>

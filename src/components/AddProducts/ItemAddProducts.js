@@ -57,7 +57,7 @@ export const FormAddProduct =createContext({
 
  const submit = (e) => {
      e.preventDefault ();
-     if ( !price || !category || !boxcont  )
+     if ( !name || !category  )
          {
              return(
                  Swal.fire('Completa los datos porfavor') 
@@ -68,7 +68,6 @@ export const FormAddProduct =createContext({
          name,
          code,
          description,
-         stockbox,
          boxcont,
          price,
          category,
@@ -136,8 +135,6 @@ export const FormAddProduct =createContext({
   </div>  
 
 
- <div className='cart-cargadato'> <label><span style={{color:'red',fontSize:20}}>*</span> Stock Cajas:</label> 
-  <input value={stockbox} onChange={(e) => setStockbox(e.target.value)} type='number'></input></div>  
 
   <h5 className='h5-edit'>Unidad:</h5>
 

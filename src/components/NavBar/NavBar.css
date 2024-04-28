@@ -8,12 +8,18 @@
  }
  .nav_logo{
     font-weight: bold;
-    width: 250px; 
+    width: 450px; 
     height: 250px;
     margin-bottom: 20px;
+    margin-top: 15px;
     margin-right: 35%;
     color: white;
+    display: flex;
+    flex-direction: row;
+
  }
+
+ .nav_logo li{list-style: none; margin-top: 5px;}
  
  .nav_logo img{ width: auto; 
     height: 150px;
@@ -52,19 +58,23 @@ font-size: 18px;}
  
  @media  (max-width: 1080px) {
  
+ 
+
  .dropdown{margin-left: 32%;}
  
     .card-menuDespleglable{position:relative;}
  
     .nav_logo img{ width: auto; 
-       height: 100px;}
- 
+       height: 70px;}
+    
+    .nav_logo li{list-style: none; font-size: 7px; }
+    
     .nav_logo{
        font-weight: bold;
-       width: 50px; 
+       width: 100px; 
        height: 50px;
        margin-bottom: 80px;
-       margin-right: 45%;
+       margin-right: 50%;
        color: white;
     }
     

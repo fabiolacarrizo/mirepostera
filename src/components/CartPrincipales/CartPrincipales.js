@@ -22,7 +22,6 @@ return(
     <ul>
       <li>Vainilla</li>
       <li>Sabores Artificiales</li>
-      <li>24 Sabores Disponibles</li>
     </ul>
    </p>
      </div>
@@ -40,9 +39,12 @@ return(
    <h3>Reposteria y Decoracion</h3>
    <p>
    <ul>
-      <li>Gliter</li>
-      <li>Fondant</li>
-      <li></li>
+      <li>Diamantina Tornasol</li>
+      <li>Diamantina de colores</li>
+      <li>Diamantina Neon</li>
+      <li>Matizador Dorado</li>
+      <li>Matizador Plateado</li>
+      <li>Colorantes en Gel</li>
     </ul>
    </p>
      </div>
@@ -60,11 +62,15 @@ return(
    <h3>Materias Primas</h3>
    <p>
    <ul>
-      <li>Acido Citrico</li>
-      <li>Gelatina sin Sabor</li>
-      <li>Goma xhantan</li>
+      <li>CMC</li>
+      <li>Goma Xhantan</li>
       <li>Goma Guar</li>
+      <li>Acido Citrico</li>
+      <li>Sorbato de Potasio</li>
       <li>Caramelina</li>
+      <li>Gelatina sin sabor</li>
+      <li>Glucosa </li>
+      <li>Glicerina</li>
     </ul>
    </p>
      </div>

@@ -10,7 +10,7 @@ const ItemCount= ({onAdd , stockbox, precioVenta})=>{
 
 
 const incrementar= () =>{ 
-  if( quantity < stockbox)  {setQuantity(quantity+1)} 
+  if( quantity < 10)  {setQuantity(quantity+1)} 
 }
 
 const disminuir= () =>{ 

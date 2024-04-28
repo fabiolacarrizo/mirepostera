@@ -6,7 +6,7 @@ import {  useParams, useNavigate  } from 'react-router-dom'
 import Swal from 'sweetalert2'
 import deleteprod from '../../assets/img/deleteprod.png'
 import logo2 from '../../assets/img/logo2.png'
-
+import moment from "moment"
 
 
 
@@ -22,9 +22,10 @@ const ItemOrderContainer= ({ greeting})=>{
 useEffect(()=>{
   setLoading(true)
 
-const collectionRef = orderId 
-? query (collection(db, 'orders'), where('category', '==', orderId))
-: query (collection(db, 'orders'))
+  const collectionRef = orderId 
+  ? query (collection(db, 'orders'), where('category', '==', orderId))
+  : query (collection(db, 'orders'),orderBy('date', 'desc'))
+  
 
 
  getDocs(collectionRef ).then(response =>{
@@ -117,7 +118,7 @@ if(!search){
           <table className='table table table-hover'>
             <thead>
               <tr>
-                <th className="p-hora">Fecha</th>
+                <th >Fecha</th>
                 <th>Nombre</th>
                 <th>Telefono</th>
                 <th>Total Productos</th>
@@ -128,7 +129,7 @@ if(!search){
             <tbody>
               { results.map( (order) => (
                 <tr key={order.id}>
-                  <td className="p-fecha">{order.date.toLocaleString('en-US')}</td>
+                  <td >{moment(order.date).format('DD MMM YYYY hh:mm a')}</td>
                   <td>{order.buyer.name}</td>
                   <td>{order.buyer.tlf}</td>
                   <td>{order.totalproducts}</td> 

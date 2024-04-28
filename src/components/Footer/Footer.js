@@ -7,6 +7,13 @@ import { Link } from 'react-router-dom'
 const Footer =()=>{
     return(
         <div className='cart-footer'>
+
+<ul>
+    <li>RIF J-50445575-0 </li>
+    <li>Guatire - Edo.Miranda</li>
+    <li>Emprendimiento Mariann Mendoza</li>
+    </ul>
+    
 <ul>
    <Link to={'/'}>  <li>Inicio</li></Link>
     <Link to={'/productos'}><li>Productos</li></Link>
@@ -14,8 +21,8 @@ const Footer =()=>{
 </ul>
 
 <ul className='iconos-redes'>
-    <li> <img src={iconocorreo}></img></li>
-    <li><img src={iconoinstagram}></img></li>
+    <li> <a href='mailto:mirepostera@gmail.com' target='_blank'> <img src={iconocorreo}></img></a></li>
+    <li> <a href='https://www.instagram.com/mirepostera?igsh=MTI3bHcxb2l2OWg1OA==' target='_blank'><img src={iconoinstagram}></img></a></li>
 </ul>
         </div>
     )

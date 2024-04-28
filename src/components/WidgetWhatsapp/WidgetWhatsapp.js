@@ -7,7 +7,7 @@ const WidgetWhatsapp =()=>{
       
     return(
         <div className='icon_whatsapp animate__animated animate__backInLeft'>
-       <a href='https://api.whatsapp.com/send?phone=5491126222492' target='_blank'>  <img src={whatsapp}></img>  </a>
+       <a href='https://api.whatsapp.com/send?phone=584120980694' target='_blank'>  <img src={whatsapp}></img>  </a>
         </div>
     )
 }
