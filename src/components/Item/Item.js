@@ -1,7 +1,7 @@
 import './Item.css'
 import { Link } from 'react-router-dom'
 
-const Item = ({id, name, code, price , img, category,visible, priceCaja}) =>{
+const Item = ({id, name, price , img, visible, priceCaja}) =>{
   
     if(visible !== "privado"){
        return(

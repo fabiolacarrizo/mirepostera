@@ -26,7 +26,7 @@ useEffect(()=>{
 
 const collectionRef = categoryId 
 ? query (collection(db, 'products'), where('category', '==', categoryId))
-:  query (collection(db, 'products'),orderBy('code', 'asc'))
+:  query (collection(db, 'products'),orderBy('category', 'asc'))
 
  getDocs(collectionRef ).then(response =>{
 const productsAdapted = response.docs.map(doc =>{

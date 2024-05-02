@@ -8,21 +8,19 @@ import {
 } from "firebase/storage";
 import { storage } from "../../service/firebase";
 import { v4 } from "uuid";
+import { useNavigate } from "react-router-dom";
 
 export const FormAddProduct =createContext({
+    img:"",
    name:"",
-   code:"",
-   description:"",
-   stockbox:"",
-   boxcont:"",
-   boxdescription:"",
-   price:"",
-   category:"",
-   costo:"",
-   img:"",
    visible:"",
-   cantidadxCaja:"",
+   description:"",
+   category:"",
    priceCaja:"",
+   cantidadxCaja:"",
+   boxcont:"",
+     price:"",
+   
  })
  
  
@@ -40,7 +38,7 @@ export const FormAddProduct =createContext({
      const [visible, setVisible]= useState("publico");
      const [priceCaja, setPriceCaja] = useState("");
      const [cantidadxCaja, setCantidadxCaja] = useState ("");
-
+     const navigate = useNavigate()
 
      const imagesListRef = ref(storage, "images/");
      const uploadFile = () => {
@@ -65,17 +63,15 @@ export const FormAddProduct =createContext({
          }
  
      else { completoDatos(
-         name,
-         code,
-         description,
-         boxcont,
-         price,
-         category,
-         costo,
          img,
-         visible,
-         cantidadxCaja,
-         priceCaja
+         name,  
+        visible,
+         description,
+         category,  
+         priceCaja, 
+        cantidadxCaja,   
+       boxcont, 
+       price,
      )
        return(
          Swal.fire({
@@ -84,9 +80,10 @@ export const FormAddProduct =createContext({
            title: 'Los datos Fueron cargados',
            showConfirmButton: false,
            timer: 1500
+             
          })
        )
- 
+       
     
      }
      }
@@ -142,7 +139,7 @@ export const FormAddProduct =createContext({
 <input value={priceCaja} onChange={(e) => setPriceCaja(e.target.value)} type='number'></input> </div>  
 
 <div className='cart-cargadato'> <label>Descripcion </label> 
- <input value={cantidadxCaja} onChange={(e) => setCantidadxCaja(e.target.value)} type='number'></input> </div>  
+ <input value={cantidadxCaja} onChange={(e) => setCantidadxCaja(e.target.value)} type='text'></input> </div>  
 
 
  <h5 className='h5-edit'>Mayorista:</h5>
@@ -151,7 +148,7 @@ export const FormAddProduct =createContext({
  <input value={price} onChange={(e) => setPrice(e.target.value)} type='number'></input> </div>  
 
  <div className='cart-cargadato'> <label>Descripcion: </label> 
-  <input value={boxcont} onChange={(e) => setBoxcont(e.target.value)} type='number'></input> </div>  
+  <input value={boxcont} onChange={(e) => setBoxcont(e.target.value)} type='text'></input> </div>  
 
 
 

@@ -21,25 +21,22 @@ const AddProductsContainer =() =>{
 	const [priceCaja, setPriceCaja] = useState("");
 	const [cantidadxCaja, setCantidadxCaja] = useState ("");
 
-const completoDatos = (name, code, description, stockbox, boxcont, price, category, costo,img,visible, priceCaja,  cantidadxCaja) =>{
-	setDatosCompra({name, code, description, stockbox, boxcont,price, category, costo, img,visible, priceCaja, cantidadxCaja })
+const completoDatos = (img,name,visible, description,category, priceCaja,  cantidadxCaja, boxcont, price) =>{
+	setDatosCompra({img,name,visible, description,category, priceCaja,  cantidadxCaja, boxcont, price})
 	setPersonalData(true)
 }
 
 
 	const product =  {
+		img:datosCompra.img,
 		name: datosCompra.name,
-        code: datosCompra.code,
+		visible:datosCompra.visible,
         description: datosCompra.description,
-        stockbox: datosCompra.stockbox,
+        category: datosCompra.category,
+        priceCaja:datosCompra.priceCaja,
+		cantidadxCaja:datosCompra.cantidadxCaja,
         boxcont: datosCompra.boxcont,
         price: datosCompra.price,
-		category: datosCompra.category,
-		costo: datosCompra.costo,
-		img:datosCompra.img,
-		visible:datosCompra.visible,
-		priceCaja:datosCompra.priceCaja,
-		cantidadxCaja:datosCompra.cantidadxCaja,
 	} 
 
 	const handleClick = async () => {
